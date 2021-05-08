@@ -50,6 +50,13 @@
 			<version>${tacocloud.version}</version>
 		</dependency>
 
+		<!-- Fix for NPE Cannot invoke "java.lang.reflect.AccessibleObject.setAccessible(boolean)" because "ao" is null -->
+		<dependency>
+			<groupId>org.javassist</groupId>
+			<artifactId>javassist</artifactId>
+			<version>3.27.0-GA</version>
+		</dependency>
+
 		<!-- Run against embedded H2 database by default -->
 		<dependency>
 			<groupId>com.h2database</groupId>
